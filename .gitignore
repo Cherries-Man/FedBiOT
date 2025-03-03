@@ -143,3 +143,5 @@ dmypy.json
 
 # No new scripts 
 /scripts_*
+*.ckpt
+/data
