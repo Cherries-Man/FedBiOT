@@ -536,6 +536,7 @@ class Server(BaseServer):
         """
         # Save final round model
         if self._cfg.federate.save_to != '' and self.ds_rank == 0:
+
             self.aggregator.save_model(
                 add_prefix_to_path('final_', self._cfg.federate.save_to),
                 self.state)
